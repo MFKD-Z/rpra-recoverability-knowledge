@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "RPRA Recoverability Knowledge Representation Reproducibility Package"
 version: 1.0.0
+doi: 10.5281/zenodo.21917007
 type: software
 authors:
   - family-names: Zhou
@@ -19,6 +20,7 @@ preferred-citation:
   type: software
   title: "RPRA Recoverability Knowledge Representation Reproducibility Package"
   version: 1.0.0
+  doi: 10.5281/zenodo.21917007
   authors:
     - family-names: Zhou
       given-names: Yunji

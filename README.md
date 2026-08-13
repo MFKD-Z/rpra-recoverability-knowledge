@@ -14,6 +14,11 @@ model, grid-based backward recoverable sets, recoverability-preserving action
 envelopes, RDF decision certificates, evidence-conditioned reasoning, five
 SPARQL query forms, and scripts for the reported tables and figures.
 
+## Archived release
+
+Version 1.0.0 is permanently archived on Zenodo:
+https://doi.org/10.5281/zenodo.21917007
+
 ## Paper
 
 The accompanying paper is:
