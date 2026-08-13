@@ -1,0 +1,19 @@
+PREFIX rpra: <https://w3id.org/rpra/knowledge#>
+
+# Bind configuration and state before execution.
+SELECT ?action ?actionValue ?decision
+WHERE {
+  ?state rpra:underConfiguration ?configuration .
+  {
+    ?state rpra:hasPreservingAction ?action .
+    BIND("PRESERVES_RECOVERABILITY" AS ?decision)
+  }
+  UNION
+  {
+    ?state rpra:hasDestroyingAction ?action .
+    BIND("DESTROYS_RECOVERABILITY" AS ?decision)
+  }
+  ?action rpra:actionValueMM ?actionValue .
+}
+ORDER BY ?actionValue
+

@@ -1,0 +1,16 @@
+figure_local_id,source_sample_id,rough_state_mm,rough_recoverability_margin_mm,rough_conventional_pass,rough_recoverability_pass,final_contour_error_mm,final_quality_limit_mm,final_outcome,source_reference,source_data_type
+F13_01,null,0.1862,-0.0463,true,false,0.0501,0.0400,FAIL,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_02,null,0.1450,-0.0051,true,false,0.0411,0.0400,FAIL,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_03,null,0.1667,-0.0268,true,false,0.0461,0.0400,FAIL,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_04,null,0.1569,-0.0170,true,false,0.0432,0.0400,FAIL,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_05,null,0.1605,-0.0206,true,false,0.0432,0.0400,FAIL,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_06,null,0.1522,-0.0123,true,false,0.0415,0.0400,FAIL,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_07,null,0.0689,0.0710,true,true,0.0222,0.0400,PASS,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_08,null,0.1299,0.0100,true,true,0.0361,0.0400,PASS,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_09,null,0.0821,0.0578,true,true,0.0246,0.0400,PASS,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_10,null,0.1188,0.0211,true,true,0.0327,0.0400,PASS,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_11,null,0.1046,0.0353,true,true,0.0289,0.0400,PASS,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_12,null,0.1088,0.0311,true,true,0.0308,0.0400,PASS,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_13,null,0.0902,0.0497,true,true,0.0255,0.0400,PASS,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_14,null,0.1189,0.0210,true,true,0.0324,0.0400,PASS,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION
+F13_15,null,0.1132,0.0267,true,true,0.0310,0.0400,PASS,"Fig.13 rough-stage label -> final label (visual arrow pair)",FIGURE_LABEL_TRANSCRIPTION

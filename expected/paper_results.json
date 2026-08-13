@@ -1,0 +1,65 @@
+{
+  "three_pass_100um": {
+    "state_total": 621,
+    "recoverable": 407,
+    "irrecoverable": 214,
+    "local_feasible_irrecoverable": 212,
+    "fully_preserving_states": 118,
+    "mixed_action_states": 289,
+    "action_total": 73454,
+    "preserving_actions": 31549,
+    "destroying_actions": 41905
+  },
+  "four_pass_100um": {
+    "state_total": 947,
+    "recoverable": 947,
+    "irrecoverable": 0,
+    "fully_preserving_states": 407,
+    "mixed_action_states": 540,
+    "action_total": 288058,
+    "preserving_actions": 195289,
+    "destroying_actions": 92769
+  },
+  "three_pass_105um": {
+    "state_total": 621,
+    "recoverable": 489,
+    "irrecoverable": 132,
+    "action_total": 102475,
+    "preserving_actions": 47197,
+    "destroying_actions": 55278
+  },
+  "three_pass_110um": {
+    "state_total": 621,
+    "recoverable": 571,
+    "irrecoverable": 50,
+    "action_total": 136011,
+    "preserving_actions": 65511,
+    "destroying_actions": 70500
+  },
+  "configuration_dependence": {
+    "evaluated_wip_values": 621,
+    "configuration_dependent_values": 214,
+    "three_vs_four_shared_values": 261,
+    "three_100_vs_105_disagreements": 82,
+    "three_100_vs_110_disagreements": 164
+  },
+  "mechanism_4p442mm": {
+    "state_mm": 4.442,
+    "destroying_action_mm": 0.432,
+    "destroying_successor_mm": 4.010,
+    "preserving_action_mm": 0.557,
+    "preserving_successor_mm": 3.885
+  },
+  "complete_domain_equivalence": {
+    "state_semantics_unchanged": true,
+    "action_semantics_unchanged": true
+  },
+  "grid_robustness": [
+    {"grid_mm": 0.004, "continuous_boundary_mm": 4.588030453165504, "discrete_upper_mm": 4.576, "boundary_error_um": 12.03045316550444, "heldout_agreement": 391, "unsafe_optimistic": 0},
+    {"grid_mm": 0.002, "continuous_boundary_mm": 4.588030453165504, "discrete_upper_mm": 4.584, "boundary_error_um": 4.030453165504433, "heldout_agreement": 397, "unsafe_optimistic": 0},
+    {"grid_mm": 0.001, "continuous_boundary_mm": 4.588030453165504, "discrete_upper_mm": 4.586, "boundary_error_um": 2.030453165503765, "heldout_agreement": 399, "unsafe_optimistic": 0},
+    {"grid_mm": 0.0005, "continuous_boundary_mm": 4.588030453165504, "discrete_upper_mm": 4.5865, "boundary_error_um": 1.530453165504042, "heldout_agreement": 399, "unsafe_optimistic": 0},
+    {"grid_mm": 0.00025, "continuous_boundary_mm": 4.588030453165504, "discrete_upper_mm": 4.5875, "boundary_error_um": 0.5304531655037081, "heldout_agreement": 400, "unsafe_optimistic": 0}
+  ]
+}
+

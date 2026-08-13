@@ -1,0 +1,9 @@
+PREFIX rpra: <https://w3id.org/rpra/knowledge#>
+
+CONSTRUCT { ?action rpra:preservesRecoverability true . }
+WHERE {
+  ?state rpra:hasCandidateAction ?action .
+  ?action rpra:locallyFeasible true ; rpra:hasSuccessorState ?successor .
+  ?successor rpra:downstreamRecoverableMember true .
+}
+

@@ -1,0 +1,11 @@
+PREFIX rpra: <https://w3id.org/rpra/knowledge#>
+
+# Bind configuration and state before execution.
+SELECT ?stateValue ?decision
+WHERE {
+  ?state rpra:underConfiguration ?configuration ;
+         rpra:stateValueMM ?stateValue ;
+         rpra:recoverabilityStatus ?status .
+  BIND(REPLACE(STR(?status), "^.*#", "") AS ?decision)
+}
+

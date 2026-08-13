@@ -1,0 +1,44 @@
+@prefix rpra: <https://w3id.org/rpra/knowledge#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rpra:WIPState a rdfs:Class .
+rpra:MachiningAction a rdfs:Class .
+rpra:RPRAConfiguration a rdfs:Class .
+rpra:ReasoningRule a rdfs:Class .
+rpra:RecoverabilityStatus a rdfs:Class .
+
+rpra:RECOVERABLE a rpra:RecoverabilityStatus .
+rpra:IRRECOVERABLE a rpra:RecoverabilityStatus .
+rpra:UNKNOWN a rpra:RecoverabilityStatus .
+
+rpra:underConfiguration a rdf:Property ; rdfs:range rpra:RPRAConfiguration .
+rpra:hasCandidateAction a rdf:Property ; rdfs:range rpra:MachiningAction .
+rpra:hasSuccessorState a rdf:Property ; rdfs:range rpra:WIPState .
+rpra:evaluatedCurrentState a rdf:Property ; rdfs:range xsd:boolean .
+rpra:remainingPassCount a rdf:Property ; rdfs:range xsd:integer .
+rpra:stateValueMM a rdf:Property ; rdfs:range xsd:decimal .
+rpra:actionValueMM a rdf:Property ; rdfs:range xsd:decimal .
+rpra:locallyFeasible a rdf:Property ; rdfs:range xsd:boolean .
+rpra:downstreamRecoverableMember a rdf:Property ; rdfs:range xsd:boolean .
+rpra:deflectionLimitUM a rdf:Property ; rdfs:range xsd:decimal .
+rpra:finalThicknessMM a rdf:Property ; rdfs:range xsd:decimal .
+rpra:physicsModelName a rdf:Property ; rdfs:range xsd:string .
+rpra:numericalMethodName a rdf:Property ; rdfs:range xsd:string .
+rpra:candidateActionEnumerationComplete a rdf:Property ; rdfs:range xsd:boolean .
+rpra:downstreamMembershipComplete a rdf:Property ; rdfs:range xsd:boolean .
+
+rpra:preservesRecoverability a rdf:Property ; rdfs:range xsd:boolean .
+rpra:destroysRecoverability a rdf:Property ; rdfs:range xsd:boolean .
+rpra:recoverabilityStatus a rdf:Property ; rdfs:range rpra:RecoverabilityStatus .
+rpra:hasPreservingAction a rdf:Property ; rdfs:range rpra:MachiningAction .
+rpra:hasDestroyingAction a rdf:Property ; rdfs:range rpra:MachiningAction .
+rpra:derivedByRule a rdf:Property ; rdfs:range rpra:ReasoningRule .
+rpra:usesReasoningRule a rdf:Property ; rdfs:range rpra:ReasoningRule .
+
+rpra:RuleInferPreservingAction a rpra:ReasoningRule .
+rpra:RuleInferRecoverableState a rpra:ReasoningRule .
+rpra:RuleInferDestroyingAction a rpra:ReasoningRule .
+rpra:RuleInferIrrecoverableOrUnknownState a rpra:ReasoningRule .
+

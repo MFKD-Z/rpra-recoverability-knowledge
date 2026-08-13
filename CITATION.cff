@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "RPRA Recoverability Knowledge Representation Reproducibility Package"
+version: 1.0.0
+type: software
+authors:
+  - family-names: Zhou
+    given-names: Yunji
+  - family-names: Chen
+    given-names: Yang
+  - family-names: Wang
+    given-names: Qingyu
+  - family-names: Chen
+    given-names: Shunjie
+  - family-names: Yu
+    given-names: Miao
+license: BSD-3-Clause
+preferred-citation:
+  type: software
+  title: "RPRA Recoverability Knowledge Representation Reproducibility Package"
+  version: 1.0.0
+  authors:
+    - family-names: Zhou
+      given-names: Yunji
+    - family-names: Chen
+      given-names: Yang
+    - family-names: Wang
+      given-names: Qingyu
+    - family-names: Chen
+      given-names: Shunjie
+    - family-names: Yu
+      given-names: Miao
+

@@ -1,0 +1,8 @@
+PREFIX rpra: <https://w3id.org/rpra/knowledge#>
+
+CONSTRUCT { ?state rpra:recoverabilityStatus rpra:RECOVERABLE . }
+WHERE {
+  ?state rpra:evaluatedCurrentState true ; rpra:hasCandidateAction ?action .
+  ?action rpra:preservesRecoverability true .
+}
+

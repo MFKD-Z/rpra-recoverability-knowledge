@@ -1,0 +1,14 @@
+PREFIX rpra: <https://w3id.org/rpra/knowledge#>
+
+# Bind stateValueTarget before execution.
+SELECT ?configuration ?remainingPassCount ?deflectionLimitUM ?decision
+WHERE {
+  ?state rpra:stateValueMM ?stateValueTarget ;
+         rpra:underConfiguration ?configuration ;
+         rpra:recoverabilityStatus ?status .
+  ?configuration rpra:remainingPassCount ?remainingPassCount ;
+                 rpra:deflectionLimitUM ?deflectionLimitUM .
+  BIND(REPLACE(STR(?status), "^.*#", "") AS ?decision)
+}
+ORDER BY ?remainingPassCount ?deflectionLimitUM
+

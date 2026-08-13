@@ -1,0 +1,22 @@
+PREFIX rpra: <https://w3id.org/rpra/knowledge#>
+
+# Bind configuration, state, and action before execution.
+SELECT ?stateValue ?currentStatus ?actionValue ?successorValue
+       ?downstreamRecoverable ?decision ?reasoningRule
+WHERE {
+  ?state rpra:underConfiguration ?configuration ;
+         rpra:stateValueMM ?stateValue ;
+         rpra:recoverabilityStatus ?currentStatus ;
+         rpra:hasCandidateAction ?action .
+  ?action rpra:actionValueMM ?actionValue ;
+          rpra:hasSuccessorState ?successor ;
+          rpra:derivedByRule ?reasoningRule .
+  ?successor rpra:stateValueMM ?successorValue ;
+             rpra:downstreamRecoverableMember ?downstreamRecoverable .
+  VALUES (?decisionPredicate ?decision) {
+    (rpra:preservesRecoverability "PRESERVES_RECOVERABILITY")
+    (rpra:destroysRecoverability "DESTROYS_RECOVERABILITY")
+  }
+  ?action ?decisionPredicate true .
+}
+

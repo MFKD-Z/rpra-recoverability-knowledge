@@ -1,0 +1,11 @@
+case,knowledge_condition,candidate_enumeration_complete,downstream_membership_complete,preserving_witness,returned_status,requires_integrity_review
+KC-01,Complete knowledge with a valid preserving witness,true,true,true,RECOVERABLE,false
+KC-02,Complete knowledge with no preserving witness,true,true,false,IRRECOVERABLE,false
+KC-03,Candidate enumeration incomplete with no witness,false,true,false,UNKNOWN,false
+KC-04,Downstream membership incomplete with no witness,true,false,false,UNKNOWN,false
+KC-05,Valid preserving witness without global completeness,false,false,true,RECOVERABLE,false
+KC-06,Partial knowledge without a preserving witness,false,false,false,UNKNOWN,false
+KC-07,Inaccurate completeness omits a known preserving witness,true,true,false,IRRECOVERABLE,true
+KC-08,Preserving witness is bound to another configuration,true,true,true,RECOVERABLE,true
+KC-09,Contradictory action evidence is represented,true,true,true,RECOVERABLE,true
+

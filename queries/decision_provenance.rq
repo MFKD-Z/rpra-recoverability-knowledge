@@ -1,0 +1,17 @@
+PREFIX rpra: <https://w3id.org/rpra/knowledge#>
+
+# Bind decisionResource before execution.
+SELECT ?stateValue ?remainingPassCount ?deflectionLimitUM ?finalThicknessMM
+       ?physicsModel ?numericalMethod ?reasoningRule
+WHERE {
+  ?state rpra:hasCandidateAction ?decisionResource ;
+         rpra:stateValueMM ?stateValue ;
+         rpra:underConfiguration ?configuration .
+  ?configuration rpra:remainingPassCount ?remainingPassCount ;
+                 rpra:deflectionLimitUM ?deflectionLimitUM ;
+                 rpra:finalThicknessMM ?finalThicknessMM ;
+                 rpra:physicsModelName ?physicsModel ;
+                 rpra:numericalMethodName ?numericalMethod .
+  ?decisionResource rpra:derivedByRule ?reasoningRule .
+}
+

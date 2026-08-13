@@ -1,0 +1,24 @@
+name: three_pass_110um
+remaining_pass_count: 3
+deflection_limit_um: 110.0
+workpiece_height_mm: 48.0
+workpiece_width_mm: 40.0
+final_thickness_mm: 3.1
+tool_diameter_mm: 12.0
+tooth_count: 5
+feed_per_tooth_mm: 0.06
+axial_depth_mm: 35.0
+k_tc_mpa: 752.5
+k_rc_mpa: 200.5
+youngs_modulus_mpa: 69000.0
+poisson_ratio: 0.33
+legal_radial_removal_min_mm: 0.36
+legal_radial_removal_max_mm: 0.9
+state_grid_mm: 0.001
+evaluation_state_min_mm: 4.18
+evaluation_state_max_mm: 4.8
+milling_branch: down
+evaluation_xi: 1.0
+optimizer_multistart: 7
+decision_tolerance_um: 0.0000001
+

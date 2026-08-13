@@ -1,0 +1,12 @@
+PREFIX rpra: <https://w3id.org/rpra/knowledge#>
+
+CONSTRUCT { ?state rpra:recoverabilityStatus ?status . }
+WHERE {
+  ?state rpra:evaluatedCurrentState true .
+  FILTER NOT EXISTS { ?state rpra:recoverabilityStatus rpra:RECOVERABLE }
+  BIND(EXISTS { ?state rpra:candidateActionEnumerationComplete true } AS ?actionsComplete)
+  BIND(EXISTS { ?state rpra:downstreamMembershipComplete true } AS ?membershipComplete)
+  BIND(IF(?actionsComplete && ?membershipComplete,
+          rpra:IRRECOVERABLE, rpra:UNKNOWN) AS ?status)
+}
+
