@@ -12,7 +12,14 @@ The package reconstructs remaining-process recoverability analysis (RPRA) for
 thin-wall peripheral milling. It includes the Morelli analytical deflection
 model, grid-based backward recoverable sets, recoverability-preserving action
 envelopes, RDF decision certificates, evidence-conditioned reasoning, five
-SPARQL query forms, and scripts for the reported tables and figures.
+SPARQL query forms, and scripts for the reported tables and supporting numerical
+presentation artifacts.
+
+The package distinguishes three evidence levels used in the manuscript:
+1. numerical-source validation against continuous constrained re-optimization;
+2. representation conformance between RPRA outputs and compact certificates /
+   complete-domain action predicates;
+3. semantic negative-control tests under information loss and integrity violations.
 
 ## Archived release
 
@@ -44,15 +51,20 @@ The package reproduces:
 - preserving and destroying action envelopes;
 - the 4.442 mm state mechanism example;
 - configuration-dependent state decisions;
-- complete-domain state and action semantic equivalence;
+- compact state-certificate conformance and complete-domain action-predicate conformance;
 - evidence-conditioned RECOVERABLE, IRRECOVERABLE, and UNKNOWN behavior;
 - five decision-reuse query forms and their provenance trace;
-- grid/continuous comparison, reported tables, and Figs. 3, 5, 6, and 7.
+- grid/continuous comparison and the numerical results underlying the reported tables.
+
+The figure-generation scripts retain historical/supporting output filenames for
+reproducibility. These filenames should not be interpreted as the current
+manuscript figure numbering.
 
 ## Repository structure
 
 ```text
 configs/              Four reader-facing configurations
+audits/               Protocol verification and closure evidence
 data/reference/       Reference summaries and timing context
 data/external/        Secondary numeric transcription and provenance
 expected/             Published expected results
@@ -84,8 +96,8 @@ python scripts/reproduce.py --mode quick
 ```
 
 The command recomputes the four discrete configurations, checks the key state
-and action counts, verifies the 4.442 mm mechanism, and checks state/action
-semantic equivalence. Success ends with:
+and action counts, verifies the 4.442 mm mechanism, and checks key
+state-certificate and action-predicate conformance results. Success ends with:
 
 ```text
 QUICK_REPRODUCTION=PASS
@@ -117,10 +129,13 @@ Reader-facing expected values are stored in
 
 - 407 of 621 three-pass states recoverable;
 - 212 locally feasible states without a feasible remaining continuation;
+- 289 of 407 recoverable three-pass states containing both preserving and
+  destroying locally feasible actions;
 - 31,549 preserving and 41,905 destroying three-pass actions;
-- 947 four-pass recoverable states;
+- 947 four-pass recoverable states within the reported `R4` evaluation domain;
 - 195,289 preserving and 92,769 destroying four-pass actions;
-- 214 configuration-dependent decisions on the reported 621-value basis.
+- 214 of the 261 WIP values shared by the three-pass/100-µm and
+  four-pass/100-µm configurations receiving different recoverability decisions.
 
 Separate entry points regenerate presentation artifacts:
 
@@ -128,6 +143,34 @@ Separate entry points regenerate presentation artifacts:
 python scripts/reproduce_tables.py
 python scripts/reproduce_figures.py
 ```
+
+## Off-grid upward-mapping verification
+
+A dedicated protocol audit is provided under:
+
+`audits/20260826_offgrid_upward_mapping_400_case_verification/`
+
+The audit verifies the manuscript's upward-to-next-grid retrieval convention
+against the frozen 400-state continuous-reference dataset.
+
+Across the five reported grid resolutions, exact upward mapping produced:
+
+| Grid (mm) | Agreement | Conservative false rejection | Optimistic false acceptance |
+|-----------|-----------|------------------------------|-----------------------------|
+| 0.004 | 391/400 | 9 | 0 |
+| 0.002 | 397/400 | 3 | 0 |
+| 0.001 | 399/400 | 1 | 0 |
+| 0.0005 | 399/400 | 1 | 0 |
+| 0.00025 | 400/400 | 0 | 0 |
+
+For all 2,000 held-out state-grid evaluations, the historical retrieval
+implementation and the exact upward-to-next-grid rule selected identical
+represented grid states.
+
+The historical helper uses a tolerance-adjusted ceiling. Therefore, the audit
+supports the reported case-specific retrieval results but does not establish
+an exact-ceiling implementation for arbitrary near-grid floating-point inputs
+or a general monotonicity theorem.
 
 ## Performance benchmark
 
@@ -142,7 +185,7 @@ operating system, and the Python environment; they are not pass/fail
 wall-clock thresholds. Reference measurements are provided in
 `data/reference/performance_reference.csv`.
 
-## External-data provenance
+## Archived supporting external-data provenance
 
 `data/external/zhang_fig13_transcription.csv` contains numeric observations
 transcribed from figure labels in Fig. 13 of:
@@ -152,14 +195,16 @@ of thin-walled blades in multi-stage machining process,” *Results in
 Engineering*, 31, 111604 (2026).
 https://doi.org/10.1016/j.rineng.2026.111604
 
-The IDs are author-assigned traceability identifiers, not source specimen
-identifiers. The source image is not redistributed. See
+This transcription is retained as supporting provenance in the reproducibility
+package and is not used as a separate main-text validation dataset in the
+current manuscript. The IDs are author-assigned traceability identifiers, not source
+specimen identifiers. The source image is not redistributed. See
 `data/external/README.md` for details.
 
 ## Citation
 
-Software citation metadata are provided in `CITATION.cff`. No repository URL or
-DOI is prefilled before public hosting and archival deposit exist.
+Software citation metadata, including the archived Zenodo DOI and repository
+URL, are provided in `CITATION.cff`.
 
 ## License
 
