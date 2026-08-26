@@ -1,0 +1,2 @@
+case_id,s_observed_mm,grid_mm,s_upward_mapped_mm,discrete_status,continuous_status,continuous_margin_um,error_type
+HO-0373,4.5868043086666415,0.001,4.587,IRRECOVERABLE,RECOVERABLE,0.07543706474405099,CONSERVATIVE_FALSE_REJECTION

@@ -1,0 +1,6 @@
+grid_mm,N_total,N_valid,N_agreement,agreement_rate,N_conservative_false_rejection,N_optimistic_false_acceptance,max_mapping_delta_um,N_outside_represented_domain,N_invalid_reference,legacy_mapping_equivalent_cases,all_400_cases_deterministic,continuous_reference_unchanged
+0.004,400,400,391,0.9775,9,0,3.998666877138000,0,0,400,true,true
+0.002,400,400,397,0.9925,3,0,1.999917210872000,0,0,400,true,true
+0.001,400,400,399,0.9975,1,0,0.999917210872000,0,0,400,true,true
+0.0005,400,400,399,0.9975,1,0,0.499917210872000,0,0,400,true,true
+0.00025,400,400,400,1.0,0,0,0.249917210872000,0,0,400,true,true

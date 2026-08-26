@@ -1,0 +1,6 @@
+claim,verdict,boundary
+Exact upward mapping was used effectively for the frozen held-out evaluations,SUPPORTED,"All 400 observations at all five grids; 2,000 exact-index matches"
+399/400 agreement at 0.001 mm,SUPPORTED,"Frozen scalar-thickness case and unchanged continuous references"
+Zero optimistic false acceptances at 0.001 mm,SUPPORTED,"Frozen 400-state comparison"
+Historical helper is exact for arbitrary near-grid inputs,NOT_SUPPORTED,"ceil(raw - 1e-12) differs for minimally above-grid inputs"
+General convergence or monotonicity theorem,NOT_SUPPORTED,"Only five grids and one deterministic held-out set"
