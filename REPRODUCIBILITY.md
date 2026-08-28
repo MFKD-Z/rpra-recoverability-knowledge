@@ -2,6 +2,12 @@
 
 Run commands from the repository root after installing `requirements.txt`.
 
+This map documents the frozen evidence assets for archived release v1.1.0,
+DOI `10.5281/zenodo.22140406`. The release includes the retained E1, E2, and E3
+audit assets described below and the reader-facing
+`supplementary/Supplementary_Data_FINAL.xlsx` workbook; none changes the RPRA
+production semantics or physical model.
+
 ## State recoverability and local/global distinction
 
 **Claim.** The three-pass/100 µm domain contains 621 evaluated states: 407 are

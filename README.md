@@ -29,7 +29,10 @@ results.
 
 ## Archived release
 
-Version 1.0.0 is permanently archived on Zenodo:
+The current archived release is version 1.1.0:
+https://doi.org/10.5281/zenodo.22140406
+
+The previous version 1.0.0 remains permanently archived on Zenodo:
 https://doi.org/10.5281/zenodo.21917007
 
 ## Paper
@@ -258,9 +261,9 @@ specimen identifiers. The source image is not redistributed. See
 ## Citation
 
 Software citation metadata for version 1.1.0 and the repository URL are provided
-in `CITATION.cff`. A version-specific 1.1.0 DOI will be added only after it is
-reserved. The archived version 1.0.0 DOI is listed above and is not reused as
-the DOI for version 1.1.0.
+in `CITATION.cff`. The archived version-specific DOI is
+https://doi.org/10.5281/zenodo.22140406. The archived version 1.0.0 DOI is listed
+above and is not reused as the DOI for version 1.1.0.
 
 ## License
 
