@@ -1,0 +1,9 @@
+evidence_block,case,primary_count_or_value,secondary_count_or_value,decision_fact
+E1,primary,289/407 destroying first actions,3/407 myopic completions,RPRA completed 407/407 with zero invariant violations
+E2,E2_FZ_LOW,592 recoverable states,386 mixed-action states,both separations persist
+E2,E2_FZ_HIGH,0 recoverable states,0 mixed-action states,state separation persists but mixed-action structure cannot persist
+E2,E2_AP_LOW,451 recoverable states,312 mixed-action states,both separations persist
+E2,E2_AP_HIGH,0 recoverable states,0 mixed-action states,state separation persists but mixed-action structure cannot persist
+E3,h=0.001 mm,61.8811 ms total-core median,220187 envelope cells,primary-grid descriptive timing
+E3,h=0.00025 mm,352.5967 ms total-core median,3524591 envelope cells,finest-grid descriptive timing
+E3,m=4,178.8355 ms total-core median,512327 envelope cells,four-pass descriptive timing

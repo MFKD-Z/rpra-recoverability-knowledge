@@ -1,0 +1,119 @@
+{
+  "CONFIGURATIONS": {
+    "E2_AP_HIGH": {
+      "DESTROYING_ACTION_COUNT": 0,
+      "LOCAL_ACCEPTABLE_COUNT": 621,
+      "LOCAL_BUT_IRRECOVERABLE_COUNT": 621,
+      "LOCAL_BUT_IRRECOVERABLE_RATE": 1.0,
+      "MIXED_ACTION_STATE_COUNT": 0,
+      "MIXED_ACTION_STATE_RATE": null,
+      "MYOPIC_FIRST_ACTION_DESTROYING_COUNT": 0,
+      "MYOPIC_FIRST_ACTION_DESTROYING_RATE": null,
+      "PRESERVING_ACTION_COUNT": 0,
+      "RECOVERABLE_COUNT": 0,
+      "STATE_TOTAL": 621,
+      "axial_depth_mm": 38.5,
+      "configuration": "E2_AP_HIGH",
+      "domain_check": "all explicit Morelli applicability checks passed",
+      "feed_per_tooth_mm": 0.06,
+      "status": "VALID"
+    },
+    "E2_AP_LOW": {
+      "DESTROYING_ACTION_COUNT": 48828,
+      "LOCAL_ACCEPTABLE_COUNT": 621,
+      "LOCAL_BUT_IRRECOVERABLE_COUNT": 170,
+      "LOCAL_BUT_IRRECOVERABLE_RATE": 0.27375201288244766,
+      "MIXED_ACTION_STATE_COUNT": 312,
+      "MIXED_ACTION_STATE_RATE": 0.6917960088691796,
+      "MYOPIC_FIRST_ACTION_DESTROYING_COUNT": 312,
+      "MYOPIC_FIRST_ACTION_DESTROYING_RATE": 0.6917960088691796,
+      "PRESERVING_ACTION_COUNT": 39586,
+      "RECOVERABLE_COUNT": 451,
+      "STATE_TOTAL": 621,
+      "axial_depth_mm": 31.5,
+      "configuration": "E2_AP_LOW",
+      "domain_check": "all explicit Morelli applicability checks passed",
+      "feed_per_tooth_mm": 0.06,
+      "status": "VALID"
+    },
+    "E2_BASELINE": {
+      "DESTROYING_ACTION_COUNT": 41905,
+      "LOCAL_ACCEPTABLE_COUNT": 621,
+      "LOCAL_BUT_IRRECOVERABLE_COUNT": 214,
+      "LOCAL_BUT_IRRECOVERABLE_RATE": 0.3446054750402576,
+      "MIXED_ACTION_STATE_COUNT": 289,
+      "MIXED_ACTION_STATE_RATE": 0.7100737100737101,
+      "MYOPIC_FIRST_ACTION_DESTROYING_COUNT": 289,
+      "MYOPIC_FIRST_ACTION_DESTROYING_RATE": 0.7100737100737101,
+      "PRESERVING_ACTION_COUNT": 31549,
+      "RECOVERABLE_COUNT": 407,
+      "STATE_TOTAL": 621,
+      "axial_depth_mm": 35.0,
+      "configuration": "E2_BASELINE",
+      "domain_check": "all explicit Morelli applicability checks passed",
+      "feed_per_tooth_mm": 0.06,
+      "status": "VALID"
+    },
+    "E2_FZ_HIGH": {
+      "DESTROYING_ACTION_COUNT": 0,
+      "LOCAL_ACCEPTABLE_COUNT": 621,
+      "LOCAL_BUT_IRRECOVERABLE_COUNT": 621,
+      "LOCAL_BUT_IRRECOVERABLE_RATE": 1.0,
+      "MIXED_ACTION_STATE_COUNT": 0,
+      "MIXED_ACTION_STATE_RATE": null,
+      "MYOPIC_FIRST_ACTION_DESTROYING_COUNT": 0,
+      "MYOPIC_FIRST_ACTION_DESTROYING_RATE": null,
+      "PRESERVING_ACTION_COUNT": 0,
+      "RECOVERABLE_COUNT": 0,
+      "STATE_TOTAL": 621,
+      "axial_depth_mm": 35.0,
+      "configuration": "E2_FZ_HIGH",
+      "domain_check": "all explicit Morelli applicability checks passed",
+      "feed_per_tooth_mm": 0.066,
+      "status": "VALID"
+    },
+    "E2_FZ_LOW": {
+      "DESTROYING_ACTION_COUNT": 74691,
+      "LOCAL_ACCEPTABLE_COUNT": 621,
+      "LOCAL_BUT_IRRECOVERABLE_COUNT": 29,
+      "LOCAL_BUT_IRRECOVERABLE_RATE": 0.04669887278582931,
+      "MIXED_ACTION_STATE_COUNT": 386,
+      "MIXED_ACTION_STATE_RATE": 0.652027027027027,
+      "MYOPIC_FIRST_ACTION_DESTROYING_COUNT": 386,
+      "MYOPIC_FIRST_ACTION_DESTROYING_RATE": 0.652027027027027,
+      "PRESERVING_ACTION_COUNT": 70466,
+      "RECOVERABLE_COUNT": 592,
+      "STATE_TOTAL": 621,
+      "axial_depth_mm": 35.0,
+      "configuration": "E2_FZ_LOW",
+      "domain_check": "all explicit Morelli applicability checks passed",
+      "feed_per_tooth_mm": 0.054,
+      "status": "VALID"
+    }
+  },
+  "E2_GATE": "PASS",
+  "INTERPRETATION_BOUNDARY": "Controlled analytical-condition robustness only; not physical validation, uncertainty quantification, Monte Carlo evidence, or a generality claim.",
+  "INVALID_DOMAIN_VARIANTS": [],
+  "MIXED_ACTION_STRUCTURE_PERSISTS_IN": [
+    "E2_FZ_LOW",
+    "E2_AP_LOW"
+  ],
+  "PREDECLARED_VARIANTS": [
+    "E2_FZ_LOW",
+    "E2_FZ_HIGH",
+    "E2_AP_LOW",
+    "E2_AP_HIGH"
+  ],
+  "STATE_SEPARATION_PERSISTS_IN": [
+    "E2_FZ_LOW",
+    "E2_FZ_HIGH",
+    "E2_AP_LOW",
+    "E2_AP_HIGH"
+  ],
+  "VALID_VARIANTS": [
+    "E2_FZ_LOW",
+    "E2_FZ_HIGH",
+    "E2_AP_LOW",
+    "E2_AP_HIGH"
+  ]
+}

@@ -5,9 +5,11 @@ Run commands from the repository root after installing `requirements.txt`.
 ## State recoverability and local/global distinction
 
 **Claim.** The three-pass/100 µm domain contains 621 evaluated states: 407 are
-discretely recoverable and 214 are discretely irrecoverable. On the independent
-continuous reference, 212 locally feasible states have no feasible remaining
-continuation.
+discretely recoverable. The formal finite-grid local-but-irrecoverable set
+difference is `|L_3,h \ R_3,h| = 214`. Under the adopted analytical model and
+constraints, 212 of those states are also irrecoverable on the independent
+continuous reference; the remaining 2 are conservative discrete false
+rejections.
 
 **Command.**
 
@@ -21,6 +23,66 @@ python scripts/reproduce.py --mode quick
 THREEPASSSTATES=407/621 recoverable
 THREEPASSLOCALFEASIBLEIRRECOVERABLE=212
 ```
+
+The second output line is the frozen historical continuous-boundary helper
+value. It must not be interpreted as the formal discrete set difference. The
+214/212/2 decomposition is retained explicitly in
+`audits/20260828_r81_experiment_freeze_candidate/experiment_audit_summary.md`
+and in `supplementary/Supplementary_Data_FINAL.xlsx`.
+
+## Frozen E1 decision-consequence audit
+
+**Claim.** Across all 407 represented recoverable starts, the myopic first
+action is destroying in 289 cases and completes the full horizon in 3 cases.
+RPRA-preserving rollout completes in 407/407 cases with zero preservation-
+invariant violations. This is operational verification of preserving-action
+semantics, not generic optimizer superiority or physical validation.
+
+**Retained evidence.**
+
+- `audits/20260828_r81_experiment_freeze_candidate/E1_first_action_audit.csv`
+  (407 rows)
+- `audits/20260828_r81_experiment_freeze_candidate/E1_rollout_trajectories.csv`
+  (2,442 rows)
+- `audits/20260828_r81_experiment_freeze_candidate/E1_summary.json`
+
+## Frozen E2 analytical-condition robustness
+
+**Claim.** All four additional variants were predeclared and pass the explicit
+analytical-model applicability checks. `E2_FZ_HIGH` and `E2_AP_HIGH` are valid
+domains with empty recoverable sets. Consequently, no general mixed-action
+persistence claim is made across those two domains. E2 is not physical
+experimental validation, uncertainty quantification, or Monte Carlo evidence.
+
+**Retained evidence.**
+
+- `audits/20260828_r81_experiment_freeze_candidate/E2_configuration_robustness.csv`
+- `audits/20260828_r81_experiment_freeze_candidate/E2_summary.json`
+
+## Frozen E3 numerical-core timing
+
+**Claim.** The grid and horizon timing tables retain all five measured
+repetitions after one warm-up for each case. The primary three-pass/0.001-mm
+total-core median is 61.8811 ms, the four-pass/0.001-mm median is 178.8355 ms,
+and the three-pass/0.00025-mm median is 352.5967 ms. These are descriptive
+measurements for the recorded environment, not a real-time guarantee or an
+asymptotic scaling-law claim.
+
+**Retained evidence.**
+
+- `audits/20260828_r81_experiment_freeze_candidate/E3_grid_scalability.csv`
+- `audits/20260828_r81_experiment_freeze_candidate/E3_horizon_scalability.csv`
+- `audits/20260828_r81_experiment_freeze_candidate/E3_environment.json`
+
+Exact environment: Python 3.11.9; NumPy 2.4.6; SciPy 1.17.1; OS
+Windows-10-10.0.19045-SP0; CPU AMD64 Family 25 Model 80 Stepping 0,
+AuthenticAMD; 6 physical/12 logical cores; timing method `time.perf_counter_ns
+external call boundary`; 1 warm-up and 5 measured repetitions per case.
+
+The reusable harness is
+`scripts/run_r81_experiment_freeze_candidate.py`. Do not run it as a routine
+reproduction step; use it only to investigate a retained-file integrity
+failure, with frozen inputs and byte/value comparison before replacement.
 
 ## Mixed-action states and action counts
 
@@ -163,6 +225,18 @@ python scripts/reproduce.py --mode full
 
 `reproduced_outputs/tables/grid_robustness.csv` matches the five rows in
 `data/reference/grid_robustness.csv` within numerical tolerance.
+
+The continuous reference uses independent differential-evolution
+re-optimization. Together with the formal-grid audit above, it supports the
+214/212/2 classification while preserving the distinction between discrete
+set membership and continuous analytical feasibility.
+
+## Knowledge-reuse and construct-grounding assets
+
+The RDF/SPARQL conformance and five reuse-query forms are exercised by the
+semantic and query commands above. The external Zhang et al. figure-label
+transcription in `data/external/zhang_fig13_transcription.csv` is retained for
+construct grounding only and is not used as a physical validation dataset.
 
 ## Figures and tables
 

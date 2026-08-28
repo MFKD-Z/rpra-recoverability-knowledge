@@ -1,10 +1,9 @@
 # RPRA Recoverability Knowledge Representation Reproducibility Package
 
-This repository contains the minimal reproducibility package for the numerical
-recoverability and engineering knowledge representation experiments reported in
-“Engineering Knowledge Representation and Reasoning with Explicit Validity
-Conditions for Physics-Grounded State–Action Recoverability in Multi-Stage
-Machining.”
+This repository contains the reproducibility package for the numerical
+recoverability and engineering knowledge representation evidence reported in
+“Physics-grounded remaining-process state-action recoverability for multi-stage
+machining decisions.”
 
 ## Overview
 
@@ -20,6 +19,13 @@ The package distinguishes three evidence levels used in the manuscript:
 2. representation conformance between RPRA outputs and compact certificates /
    complete-domain action predicates;
 3. semantic negative-control tests under information loss and integrity violations.
+
+## Release
+
+Version 1.1.0 expands the retained evidence and synchronizes the
+manuscript-facing documentation. It does not change the RPRA production
+semantics, Morelli implementation, decision tolerances, or frozen numerical
+results.
 
 ## Archived release
 
@@ -54,7 +60,12 @@ The package reproduces:
 - compact state-certificate conformance and complete-domain action-predicate conformance;
 - evidence-conditioned RECOVERABLE, IRRECOVERABLE, and UNKNOWN behavior;
 - five decision-reuse query forms and their provenance trace;
-- grid/continuous comparison and the numerical results underlying the reported tables.
+- grid/continuous comparison and the numerical results underlying the reported tables;
+- the frozen R8.1 E1 complete-domain decision audit, E2 predeclared
+  analytical-condition variants, and E3 numerical-core timing study;
+- an independent differential-evolution continuous-reference cross-check; and
+- a reader-facing supplementary workbook that summarizes the retained evidence
+  without replacing row-level or raw-repetition audit files.
 
 The figure-generation scripts retain historical/supporting output filenames for
 reproducibility. These filenames should not be interpreted as the current
@@ -74,6 +85,7 @@ scripts/              Reproduction and benchmark entry points
 src/rpra/             Numerical analysis and output generation
 src/knowledge/        RDF schema, graph construction, reasoning, queries
 tests/                Scientific semantic and key-result tests
+supplementary/        Reader-facing summary workbook
 ```
 
 Generated artifacts are written to `reproduced_outputs/`; the directory need
@@ -128,7 +140,11 @@ Reader-facing expected values are stored in
 `expected/paper_results.json`. Principal checks include:
 
 - 407 of 621 three-pass states recoverable;
-- 212 locally feasible states without a feasible remaining continuation;
+- a formal finite-grid local-but-irrecoverable gap
+  `|L_3,h \ R_3,h| = 214` on the adopted 0.001-mm grid;
+- a 212-state subset that is also irrecoverable under the adopted continuous
+  analytical model and constraints, leaving 2 conservative discrete false
+  rejections;
 - 289 of 407 recoverable three-pass states containing both preserving and
   destroying locally feasible actions;
 - 31,549 preserving and 41,905 destroying three-pass actions;
@@ -136,6 +152,44 @@ Reader-facing expected values are stored in
 - 195,289 preserving and 92,769 destroying four-pass actions;
 - 214 of the 261 WIP values shared by the three-pass/100-µm and
   four-pass/100-µm configurations receiving different recoverability decisions.
+
+The historical `local_feasible_irrecoverable = 212` field in
+`expected/paper_results.json` is intentionally retained because it records the
+continuous-boundary publication helper output. It is not the formal discrete
+set difference, which is 214.
+
+## R8.1 evidence expansion
+
+The frozen evidence package is retained under
+`audits/20260828_r81_experiment_freeze_candidate/`. It contains the complete
+407-row E1 first-action audit, all 2,442 E1 rollout rows, the four predeclared
+E2 analytical-condition variants, and E3 grid/horizon timing tables with raw
+repetition vectors and exact environment metadata. The two high-condition E2
+variants, `E2_FZ_HIGH` and `E2_AP_HIGH`, are valid analytical domains with empty
+recoverable sets; those null results are retained rather than replaced.
+
+The reusable frozen harness is
+`scripts/run_r81_experiment_freeze_candidate.py`. The retained files are the
+release evidence and the harness need not be rerun during ordinary
+reproduction. It should be rerun only to investigate a file-integrity failure,
+using its frozen inputs and comparing the regenerated values with the retained
+summaries before any replacement.
+
+The release also retains the existing RDF/SPARQL reuse and conformance assets.
+The Zhang et al. Fig. 13 label transcription is included only for construct
+grounding and provenance; it is not a physical validation dataset. The final
+reader-facing summary is `supplementary/Supplementary_Data_FINAL.xlsx`; the
+row-level E1 CSVs and E3 raw timing vectors remain authoritative audit assets.
+
+Interpretation is deliberately limited:
+
+- E1, E2, and E3 do not provide physical experimental validation;
+- E2 is not uncertainty quantification or Monte Carlo evidence, and mixed-action
+  persistence is not claimed across the two empty high-condition domains;
+- E3 provides environment-specific descriptive timings, not a real-time
+  guarantee or asymptotic scaling law; and
+- the 407/407 RPRA rollout is operational verification of preserving-action
+  semantics, not evidence of generic optimizer superiority.
 
 Separate entry points regenerate presentation artifacts:
 
@@ -203,8 +257,10 @@ specimen identifiers. The source image is not redistributed. See
 
 ## Citation
 
-Software citation metadata, including the archived Zenodo DOI and repository
-URL, are provided in `CITATION.cff`.
+Software citation metadata for version 1.1.0 and the repository URL are provided
+in `CITATION.cff`. A version-specific 1.1.0 DOI will be added only after it is
+reserved. The archived version 1.0.0 DOI is listed above and is not reused as
+the DOI for version 1.1.0.
 
 ## License
 
@@ -212,4 +268,3 @@ Code is licensed under the BSD 3-Clause License (`LICENSE`). Original project
 data and documentation are licensed under CC BY 4.0 (`LICENSE-DATA`). The
 external numeric transcription retains its source attribution and does not
 include the source figure.
-

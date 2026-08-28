@@ -1,0 +1,7 @@
+claim,support_status,evidence_boundary
+RPRA preserves a completion from every frozen primary recoverable start,supported,407/407 exact represented-grid rollouts with zero invariant violations
+Myopic immediate-deflection minimization often destroys downstream recoverability,supported for primary case,289/407 first actions destroying and only 3/407 full completions
+State-level local/recoverability separation persists across all four E2 variants,supported,positive local-but-irrecoverable count in every predeclared variant
+Mixed preserving/destroying structure persists across all four E2 variants,not supported,absent because recoverable set is empty in E2_FZ_HIGH and E2_AP_HIGH
+Results establish physical-condition robustness generally,not supported,controlled analytical single-parameter variants only
+E3 establishes real-time or asymptotic behavior,not supported,environment-specific repeated descriptive timing only

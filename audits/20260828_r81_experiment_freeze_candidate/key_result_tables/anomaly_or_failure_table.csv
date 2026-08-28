@@ -1,0 +1,5 @@
+case,observation,classification,required_interpretation
+E1_MYOPIC,404/407 rollouts have no locally feasible final-stage action,scientific outcome,report without using it as a gate threshold
+E2_FZ_HIGH,R1 through R3 are empty while 621/621 evaluation states are currently locally acceptable,null recoverable domain,valid input and unfavorable scientific outcome
+E2_AP_HIGH,R1 through R3 are empty while 621/621 evaluation states are currently locally acceptable,null recoverable domain,valid input and unfavorable scientific outcome
+WORKLOG,No project-root WORKLOG.md exists,audit-process limitation,do not create a second or ad hoc worklog

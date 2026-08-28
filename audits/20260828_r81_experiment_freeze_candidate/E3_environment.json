@@ -1,0 +1,13 @@
+{
+  "cpu": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "logical_core_count": 12,
+  "measured_repetitions_per_case": 5,
+  "numpy_version": "2.4.6",
+  "os": "Windows-10-10.0.19045-SP0",
+  "physical_core_count": 6,
+  "python_version": "3.11.9",
+  "scipy_version": "1.17.1",
+  "timer": "time.perf_counter_ns external call boundary",
+  "timing_claim_boundary": "No real-time or asymptotic scaling-law claim.",
+  "warmup_runs_per_case": 1
+}
