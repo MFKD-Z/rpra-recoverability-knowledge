@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "RPRA Recoverability Knowledge Representation Reproducibility Package"
 version: 1.2.0
+doi: 10.5281/zenodo.22156766
 type: software
 authors:
   - family-names: Zhou
@@ -15,9 +16,21 @@ authors:
   - family-names: Yu
     given-names: Miao
 license: BSD-3-Clause
+preferred-citation:
+  type: software
+  title: "RPRA Recoverability Knowledge Representation Reproducibility Package"
+  version: 1.2.0
+  doi: 10.5281/zenodo.22156766
+  authors:
+    - family-names: Zhou
+      given-names: Yunji
+    - family-names: Chen
+      given-names: Yang
+    - family-names: Wang
+      given-names: Qingyu
+    - family-names: Chen
+      given-names: Shunjie
+    - family-names: Yu
+      given-names: Miao
 repository-code: https://github.com/MFKD-Z/rpra-recoverability-knowledge
 url: https://github.com/MFKD-Z/rpra-recoverability-knowledge
-
-# FINALIZATION RULE:
-# Add the reserved v1.2.0 Zenodo DOI to both top-level `doi:` and
-# `preferred-citation.doi:` before tagging/releasing v1.2.0.

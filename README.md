@@ -29,10 +29,13 @@ sensitivity. The release does not change the RPRA production semantics,
 Morelli analytical model, state/action transition rule, decision tolerances, or
 frozen v1.1.0 evidence.
 
-## Archived release
+## Releases
 
-v1.2.0 release candidate: version-specific Zenodo DOI pending. The frozen
-v1.1.0 archive remains https://doi.org/10.5281/zenodo.22140406.
+The current release is version 1.2.0:
+https://doi.org/10.5281/zenodo.22156766
+
+The frozen v1.1.0 archive remains:
+https://doi.org/10.5281/zenodo.22140406
 
 The previous version 1.0.0 remains permanently archived on Zenodo:
 https://doi.org/10.5281/zenodo.21917007
@@ -306,11 +309,10 @@ specimen identifiers. The source image is not redistributed. See
 
 ## Citation
 
-Software citation metadata for the version 1.2.0 release candidate and the
-repository URL are provided in `CITATION.cff`. Its version-specific Zenodo DOI
-is pending and will be added only after reservation. The frozen v1.1.0 archive
-remains https://doi.org/10.5281/zenodo.22140406, and that DOI is not reused for
-v1.2.0.
+Software citation metadata for version 1.2.0 and the repository URL are
+provided in `CITATION.cff`. The version-specific Zenodo DOI is
+https://doi.org/10.5281/zenodo.22156766. The frozen v1.1.0 archive remains
+https://doi.org/10.5281/zenodo.22140406.
 
 ## License
 
