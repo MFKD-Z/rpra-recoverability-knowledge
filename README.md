@@ -235,6 +235,12 @@ mixed-action recoverable counts are 289, 293, 431, and 457. RPRA completes every
 recoverable start in all four cases, while MYOPIC completes 3/407, 9/419,
 16/431, and 29/457.
 
+The exhaustive B3 state-action audit contains 1,343,844 candidate rows and is
+distributed as `B3_state_action_audit.csv.gz`. The gzip packaging is lossless:
+decompression reproduces the authoritative raw CSV SHA-256 recorded in the B3
+evidence manifest. This packaging change does not alter any B3 scientific
+result.
+
 These results are bounded numerical and decision evidence for the frozen
 deterministic scalar thin-wall case. They do not establish universal
 equivalence to continuous optimization, superiority to MPC, a general

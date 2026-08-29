@@ -29,6 +29,21 @@
       "sha256": "021edf5de16ad6111b6df9b8a90f9fdb09b9005ac7299ee1c75ad88a26b84f13"
     }
   },
+  "release_packaging": {
+    "raw_authoritative_file": "B3_state_action_audit.csv",
+    "raw_sha256": "3ad3784212ef682afe50244e977109fdd97fd2273277966a57af62ac589833eb",
+    "raw_size_bytes": 147104497,
+    "raw_data_row_count": 1343844,
+    "release_file": "B3_state_action_audit.csv.gz",
+    "release_file_format": "gzip-compressed CSV",
+    "release_compression": "gzip",
+    "release_compression_level": 9,
+    "release_gzip_mtime": 0,
+    "release_sha256": "42bb6243eb997c38fac9ba45c770f4b295e1d0f910100a53137a3828ae48d7c3",
+    "release_size_bytes": 15891657,
+    "lossless_roundtrip_sha256_match": true,
+    "scientific_content_changed": false
+  },
   "invariant_error_count": 0,
   "public_v1_1_0_modified": false,
   "regression_gates": {

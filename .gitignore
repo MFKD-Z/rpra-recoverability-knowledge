@@ -3,7 +3,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 reproduced_outputs/
+audits/20260829_b3_terminal_tolerance_sensitivity/B3_state_action_audit.csv
 build/
 dist/
 *.egg-info/
-

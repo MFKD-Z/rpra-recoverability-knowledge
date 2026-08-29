@@ -3,7 +3,7 @@
 audits/20260828_b1_online_reopt_comparator/** -text whitespace=cr-at-eol
 audits/20260829_b2_near_boundary_challenge/** -text whitespace=cr-at-eol
 audits/20260829_b3_terminal_tolerance_sensitivity/** -text whitespace=cr-at-eol
-audits/20260829_b3_terminal_tolerance_sensitivity/B3_state_action_audit.csv filter=lfs diff=lfs merge=lfs -text
+audits/20260829_b3_terminal_tolerance_sensitivity/B3_state_action_audit.csv.gz binary
 scripts/run_b1_online_reopt_comparator.py -text whitespace=cr-at-eol
 scripts/run_b3_terminal_tolerance_sensitivity.py -text whitespace=cr-at-eol
 supplementary/Supplementary_Data_FINAL.xlsx binary
