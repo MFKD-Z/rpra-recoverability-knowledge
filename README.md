@@ -22,15 +22,17 @@ The package distinguishes three evidence levels used in the manuscript:
 
 ## Release
 
-Version 1.1.0 expands the retained evidence and synchronizes the
-manuscript-facing documentation. It does not change the RPRA production
-semantics, Morelli implementation, decision tolerances, or frozen numerical
-results.
+Version 1.2.0 adds the final Tier-B evidence set used by the manuscript: the B1
+matched online remaining-horizon re-optimization comparator, the B2
+deterministic near-boundary challenge, and the B3 terminal-tolerance
+sensitivity. The release does not change the RPRA production semantics,
+Morelli analytical model, state/action transition rule, decision tolerances, or
+frozen v1.1.0 evidence.
 
 ## Archived release
 
-The current archived release is version 1.1.0:
-https://doi.org/10.5281/zenodo.22140406
+v1.2.0 release candidate: version-specific Zenodo DOI pending. The frozen
+v1.1.0 archive remains https://doi.org/10.5281/zenodo.22140406.
 
 The previous version 1.0.0 remains permanently archived on Zenodo:
 https://doi.org/10.5281/zenodo.21917007
@@ -39,9 +41,9 @@ https://doi.org/10.5281/zenodo.21917007
 
 The accompanying paper is:
 
-Y. Zhou, Y. Chen, Q. Wang, S. Chen, and M. Yu, “Engineering Knowledge
-Representation and Reasoning with Explicit Validity Conditions for
-Physics-Grounded State–Action Recoverability in Multi-Stage Machining.”
+Y. Zhou, Y. Chen, Q. Wang, S. Chen, and M. Yu, “Physics-grounded
+remaining-process state-action recoverability for multi-stage machining
+decisions.”
 
 The analytical deflection implementation follows:
 
@@ -66,9 +68,16 @@ The package reproduces:
 - grid/continuous comparison and the numerical results underlying the reported tables;
 - the frozen R8.1 E1 complete-domain decision audit, E2 predeclared
   analytical-condition variants, and E3 numerical-core timing study;
-- an independent differential-evolution continuous-reference cross-check; and
+- an independent differential-evolution continuous-reference cross-check;
 - a reader-facing supplementary workbook that summarizes the retained evidence
-  without replacing row-level or raw-repetition audit files.
+  without replacing row-level or raw-repetition audit files;
+- B1 complete-domain matched decision equivalence against on-demand continuous
+  remaining-horizon re-optimization;
+- B2 161-state near-boundary numerical-fidelity challenge across five grids;
+- B3 terminal-tolerance sensitivity for exact, ±5, ±10, and ±20 µm terminal
+  sets; and
+- the synchronized 13-sheet `supplementary/Supplementary_Data_FINAL.xlsx`
+  workbook.
 
 The figure-generation scripts retain historical/supporting output filenames for
 reproducibility. These filenames should not be interpreted as the current
@@ -201,6 +210,37 @@ python scripts/reproduce_tables.py
 python scripts/reproduce_figures.py
 ```
 
+## Tier-B evidence
+
+The final Tier-B evidence is retained under:
+
+- `audits/20260828_b1_online_reopt_comparator/`;
+- `audits/20260829_b2_near_boundary_challenge/`; and
+- `audits/20260829_b3_terminal_tolerance_sensitivity/`.
+
+B1 audits all 407 primary-domain starts and finds identical RPRA and matched
+ONLINE-REOPT first actions and complete three-pass action sequences for 407/407
+starts. Both policies complete all starts; the matched online comparator uses
+42,312 downstream continuous solves for the 407 first decisions.
+
+B2 evaluates 161 deterministic states within ±20 µm of the recomputed
+continuous boundary over five grids. It finds zero optimistic false acceptances
+at every grid. Conservative false rejections decrease from 49 at 0.004 mm to 3
+at 0.00025 mm; at the adopted 0.001-mm grid, 152/161 states agree and all nine
+disagreements lie within 2.0 µm of the continuous boundary.
+
+B3 evaluates exact, ±5, ±10, and ±20 µm terminal sets on the fixed 621-state,
+0.001-mm domain. Local-but-irrecoverable counts are 214, 202, 190, and 164;
+mixed-action recoverable counts are 289, 293, 431, and 457. RPRA completes every
+recoverable start in all four cases, while MYOPIC completes 3/407, 9/419,
+16/431, and 29/457.
+
+These results are bounded numerical and decision evidence for the frozen
+deterministic scalar thin-wall case. They do not establish universal
+equivalence to continuous optimization, superiority to MPC, a general
+convergence theorem, measurement-error robustness, uncertainty quantification,
+physical validation, or cross-configuration generality.
+
 ## Off-grid upward-mapping verification
 
 A dedicated protocol audit is provided under:
@@ -260,10 +300,11 @@ specimen identifiers. The source image is not redistributed. See
 
 ## Citation
 
-Software citation metadata for version 1.1.0 and the repository URL are provided
-in `CITATION.cff`. The archived version-specific DOI is
-https://doi.org/10.5281/zenodo.22140406. The archived version 1.0.0 DOI is listed
-above and is not reused as the DOI for version 1.1.0.
+Software citation metadata for the version 1.2.0 release candidate and the
+repository URL are provided in `CITATION.cff`. Its version-specific Zenodo DOI
+is pending and will be added only after reservation. The frozen v1.1.0 archive
+remains https://doi.org/10.5281/zenodo.22140406, and that DOI is not reused for
+v1.2.0.
 
 ## License
 

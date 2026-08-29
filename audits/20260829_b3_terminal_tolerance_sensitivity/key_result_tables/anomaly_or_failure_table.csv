@@ -1,0 +1,5 @@
+terminal_case,myopic_failure_stage_reason,myopic_failure_count,rpra_failure_count,interpretation
+T0,NO_LOCALLY_FEASIBLE_ACTION_M1,404,0,retained terminal-stage failures
+T5,NO_LOCALLY_FEASIBLE_ACTION_M1,410,0,retained terminal-stage failures
+T10,NO_LOCALLY_FEASIBLE_ACTION_M1,415,0,retained terminal-stage failures
+T20,NO_LOCALLY_FEASIBLE_ACTION_M1,428,0,retained terminal-stage failures

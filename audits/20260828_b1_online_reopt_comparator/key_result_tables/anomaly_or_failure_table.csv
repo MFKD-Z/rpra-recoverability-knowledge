@@ -1,0 +1,7 @@
+item,count,status,interpretation
+RPRA_SELECTED_CONTINUOUS_INFEASIBLE,0,PASS,no scientific-conflict case
+NUMERICAL_UNRESOLVED,0,PASS,no thrown/runtime or residual-invalid outcome
+ONLINE_FEASIBLE_BUT_DISCRETE_REJECTED,0,PASS,no selected-envelope disagreement
+cache_determinism_mismatch,0,PASS,525 uncached repeats match memoized results
+optimizer_success_false_residual_valid,31,RETAINED_VALID,classified by decision_at_limit as required by frozen design
+invalid_pre_authority_attempt,1,RETAINED_NOT_INTERPRETED,initial harness misread residual-valid non-success diagnostics

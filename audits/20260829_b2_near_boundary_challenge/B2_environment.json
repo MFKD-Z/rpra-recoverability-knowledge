@@ -1,0 +1,242 @@
+{
+  "audit_directory": "G:\\rpra_experiments\\public_release\\rpra-recoverability-knowledge\\audits\\20260829_b2_near_boundary_challenge",
+  "b2_classification": "B2_STRONG_SUPPORT",
+  "baseline_commit_expected": "c25540909939f65fad732420fa484f52931c02f9",
+  "completed_utc": "2026-08-29T04:13:06.334767+00:00",
+  "configuration": {
+    "decision_tolerance_um": 1e-07,
+    "deflection_limit_um": 100.0,
+    "optimizer_multistart": 7,
+    "path": "configs/3pass_100um.yaml",
+    "remaining_pass_count": 3,
+    "sha256": "93b32d259e260324c3d0dfc295abcd7fd98d884c3473733c98e9d7a93096abb2"
+  },
+  "formal_design": {
+    "boundary_reproduced": true,
+    "challenge_state_count": 161,
+    "continuous_boundary_mm": 4.588030453165504,
+    "continuous_solver_row_count": 162,
+    "detail_row_count": 805,
+    "disagreements_confined_to_boundary_gap": true,
+    "frozen_expected_boundary_mm": 4.588030453165504,
+    "grid_metadata": {
+      "0.00025": {
+        "boundary_under_approximation_um": 0.5304531655037081,
+        "build_elapsed_ns": 71732100,
+        "discrete_upper_recoverable_boundary_mm": 4.5875,
+        "scale": 4000,
+        "stage_state_counts": {
+          "0": 1,
+          "1": 10,
+          "2": 471,
+          "3": 1631
+        },
+        "transition_counts": {
+          "1": 10,
+          "2": 4605,
+          "3": 503217
+        }
+      },
+      "0.0005": {
+        "boundary_under_approximation_um": 1.530453165504042,
+        "build_elapsed_ns": 31182600,
+        "discrete_upper_recoverable_boundary_mm": 4.5865,
+        "scale": 2000,
+        "stage_state_counts": {
+          "0": 1,
+          "1": 5,
+          "2": 235,
+          "3": 814
+        },
+        "transition_counts": {
+          "1": 5,
+          "2": 1152,
+          "3": 125546
+        }
+      },
+      "0.001": {
+        "boundary_under_approximation_um": 2.030453165503765,
+        "build_elapsed_ns": 14293200,
+        "discrete_upper_recoverable_boundary_mm": 4.586,
+        "scale": 1000,
+        "stage_state_counts": {
+          "0": 1,
+          "1": 3,
+          "2": 118,
+          "3": 407
+        },
+        "transition_counts": {
+          "1": 3,
+          "2": 346,
+          "3": 31549
+        }
+      },
+      "0.002": {
+        "boundary_under_approximation_um": 4.030453165504433,
+        "build_elapsed_ns": 6721900,
+        "discrete_upper_recoverable_boundary_mm": 4.584,
+        "scale": 500,
+        "stage_state_counts": {
+          "0": 1,
+          "1": 2,
+          "2": 59,
+          "3": 203
+        },
+        "transition_counts": {
+          "1": 2,
+          "2": 116,
+          "3": 7896
+        }
+      },
+      "0.004": {
+        "boundary_under_approximation_um": 12.03045316550444,
+        "build_elapsed_ns": 3465400,
+        "discrete_upper_recoverable_boundary_mm": 4.576,
+        "scale": 250,
+        "stage_state_counts": {
+          "0": 1,
+          "1": 1,
+          "2": 29,
+          "3": 100
+        },
+        "transition_counts": {
+          "1": 1,
+          "2": 29,
+          "3": 1942
+        }
+      }
+    },
+    "grids_mm": [
+      0.004,
+      0.002,
+      0.001,
+      0.0005,
+      0.00025
+    ],
+    "numerical_unresolved_count": 0,
+    "offset_max_um": 20.0,
+    "offset_min_um": -20.0,
+    "spacing_um": 0.25
+  },
+  "frozen_400_state_audit": {
+    "hashes_after": {
+      "G:\\rpra_experiments\\public_release\\rpra-recoverability-knowledge\\audits\\20260826_offgrid_upward_mapping_400_case_verification\\offgrid_upward_mapping_400_verification.csv": "71390492ced465764acf739c8b0d31f3a4fd1901b9638279ee7d4c22b93e2545",
+      "G:\\rpra_experiments\\public_release\\rpra-recoverability-knowledge\\audits\\20260826_offgrid_upward_mapping_400_case_verification\\offgrid_upward_mapping_summary.csv": "61a51d058d69f49bd4ef68f9f10f95c59bf05a8683e631332491c816c5bc7bea",
+      "G:\\rpra_experiments\\public_release\\rpra-recoverability-knowledge\\audits\\20260826_offgrid_upward_mapping_400_case_verification\\verification_metadata.json": "a88c4ffa689e7e3c266e303626460538ea47277994a339c9216a486fa0094b28"
+    },
+    "hashes_before": {
+      "G:\\rpra_experiments\\public_release\\rpra-recoverability-knowledge\\audits\\20260826_offgrid_upward_mapping_400_case_verification\\offgrid_upward_mapping_400_verification.csv": "71390492ced465764acf739c8b0d31f3a4fd1901b9638279ee7d4c22b93e2545",
+      "G:\\rpra_experiments\\public_release\\rpra-recoverability-knowledge\\audits\\20260826_offgrid_upward_mapping_400_case_verification\\offgrid_upward_mapping_summary.csv": "61a51d058d69f49bd4ef68f9f10f95c59bf05a8683e631332491c816c5bc7bea",
+      "G:\\rpra_experiments\\public_release\\rpra-recoverability-knowledge\\audits\\20260826_offgrid_upward_mapping_400_case_verification\\verification_metadata.json": "a88c4ffa689e7e3c266e303626460538ea47277994a339c9216a486fa0094b28"
+    },
+    "unchanged": true
+  },
+  "frozen_source_hashes": {
+    "expected/paper_results.json": "9ce1d2b78cfae6968b124d22e3f0deaefce5310575b1b1fcdb3b1490ed9056ab",
+    "src/rpra/optimization.py": "bc773ca2eb6e452085d27df07c6eeb46a2903a702a1653afd5ea7be21fd7663e",
+    "src/rpra/recoverable_set.py": "63e6a0d597d0ae8f833373191aeb871523f658a2387bc322676f4a4c8cc93789"
+  },
+  "git_status_after": "?? AEI_SUBMISSION_FREEZE.md\n?? audits/20260829_b2_near_boundary_challenge/B2_continuous_solver_audit.csv\n?? audits/20260829_b2_near_boundary_challenge/B2_near_boundary_detail.csv\n?? audits/20260829_b2_near_boundary_challenge/B2_near_boundary_summary.csv\n?? audits/20260829_b2_near_boundary_challenge/run_b2_near_boundary_challenge.py\n?? scripts/reproduce_rineng_figures.py",
+  "git_status_before": "?? AEI_SUBMISSION_FREEZE.md\n?? audits/20260829_b2_near_boundary_challenge/run_b2_near_boundary_challenge.py\n?? scripts/reproduce_rineng_figures.py",
+  "head_after": "c25540909939f65fad732420fa484f52931c02f9",
+  "head_before": "c25540909939f65fad732420fa484f52931c02f9",
+  "logical_cpu_count": 12,
+  "output_sha256": {
+    "B2_FORMAL_AUDIT.md": "3f05caf63c0286c0841e316121eb1eeef77bdfa76cf6fbf5b9bd4aaed1d01447",
+    "B2_continuous_solver_audit.csv": "b3c5e14b7733908ceba826213b4b529c6f1af3492bdb3590a989efa4968f1bba",
+    "B2_near_boundary_detail.csv": "5cbeac7e80e8aa7b830a2057e7893c1c5bcdb2b91eb9f493cd21cfc0f2fe1e59",
+    "B2_near_boundary_summary.csv": "194393bff6dd7f8dbad581d2a7f6ba59b36ec8869a66bc3998509f291f80f8df"
+  },
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "pytest": "9.1.1",
+    "rdflib": "7.6.0",
+    "scipy": "1.17.1"
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "public_tag": "v1.1.0",
+  "public_tag_commit_after": "c25540909939f65fad732420fa484f52931c02f9",
+  "public_tag_commit_before": "c25540909939f65fad732420fa484f52931c02f9",
+  "public_v1_1_0_modified": false,
+  "python_executable": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "regression_gates": {
+    "FROZEN_400_STATE_AUDIT": {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "G:\\rpra_experiments\\public_release\\rpra-recoverability-knowledge\\audits\\20260826_offgrid_upward_mapping_400_case_verification\\verify_offgrid_upward_mapping.py"
+      ],
+      "duration_seconds": 0.9683676999993622,
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"all_400_off_grid_at_all_tested_resolutions\": true,\n  \"audit_classification\": \"DIFFERENT_MAPPING_USED\",\n  \"continuous_reference_unchanged\": true,\n  \"detail_row_count\": 2000,\n  \"deterministic_generator_matches_frozen_rows\": true,\n  \"focused_mapping_checks\": {\n    \"below_next_grid_point\": true,\n    \"exact_grid_point\": true,\n    \"legacy_tolerance_divergence_reproduced\": true,\n    \"minimally_above_grid_point\": true,\n    \"outside_domain_not_clamped\": true,\n    \"upper_domain_boundary\": true\n  },\n  \"frozen_detail_sha256_after\": \"43d6646f2d1f1df756e9091b4c25133ef0190327b0b06d9e8344e10fe2d25d56\",\n  \"frozen_detail_sha256_before\": \"43d6646f2d1f1df756e9091b4c25133ef0190327b0b06d9e8344e10fe2d25d56\",\n  \"frozen_detail_source\": \"G:\\\\rpra_experiments\\\\tables\\\\heldout_400_agreement.csv\",\n  \"legacy_mapping_matches_exact_for_all_2000_evaluations\": true,\n  \"reason\": \"Historical lookup uses ceil(raw - 1e-12), which differs from exact upward mapping for minimally-above-grid inputs.\",\n  \"repository_root\": \"G:\\\\rpra_experiments\\\\public_release\\\\rpra-recoverability-knowledge\",\n  \"summary\": [\n    {\n      \"N_agreement\": 391,\n      \"N_conservative_false_rejection\": 9,\n      \"N_invalid_reference\": 0,\n      \"N_optimistic_false_acceptance\": 0,\n      \"N_outside_represented_domain\": 0,\n      \"N_total\": 400,\n      \"N_valid\": 400,\n      \"agreement_rate\": 0.9775,\n      \"all_400_cases_deterministic\": \"true\",\n      \"continuous_reference_unchanged\": \"true\",\n      \"grid_mm\": \"0.004\",\n      \"legacy_mapping_equivalent_cases\": 400,\n      \"max_mapping_delta_um\": \"3.998666877138000\"\n    },\n    {\n      \"N_agreement\": 397,\n      \"N_conservative_false_rejection\": 3,\n      \"N_invalid_reference\": 0,\n      \"N_optimistic_false_acceptance\": 0,\n      \"N_outside_represented_domain\": 0,\n      \"N_total\": 400,\n      \"N_valid\": 400,\n      \"agreement_rate\": 0.9925,\n      \"all_400_cases_deterministic\": \"true\",\n      \"continuous_reference_unchanged\": \"true\",\n      \"grid_mm\": \"0.002\",\n      \"legacy_mapping_equivalent_cases\": 400,\n      \"max_mapping_delta_um\": \"1.999917210872000\"\n    },\n    {\n      \"N_agreement\": 399,\n      \"N_conservative_false_rejection\": 1,\n      \"N_invalid_reference\": 0,\n      \"N_optimistic_false_acceptance\": 0,\n      \"N_outside_represented_domain\": 0,\n      \"N_total\": 400,\n      \"N_valid\": 400,\n      \"agreement_rate\": 0.9975,\n      \"all_400_cases_deterministic\": \"true\",\n      \"continuous_reference_unchanged\": \"true\",\n      \"grid_mm\": \"0.001\",\n      \"legacy_mapping_equivalent_cases\": 400,\n      \"max_mapping_delta_um\": \"0.999917210872000\"\n    },\n    {\n      \"N_agreement\": 399,\n      \"N_conservative_false_rejection\": 1,\n      \"N_invalid_reference\": 0,\n      \"N_optimistic_false_acceptance\": 0,\n      \"N_outside_represented_domain\": 0,\n      \"N_total\": 400,\n      \"N_valid\": 400,\n      \"agreement_rate\": 0.9975,\n      \"all_400_cases_deterministic\": \"true\",\n      \"continuous_reference_unchanged\": \"true\",\n      \"grid_mm\": \"0.0005\",\n      \"legacy_mapping_equivalent_cases\": 400,\n      \"max_mapping_delta_um\": \"0.499917210872000\"\n    },\n    {\n      \"N_agreement\": 400,\n      \"N_conservative_false_rejection\": 0,\n      \"N_invalid_reference\": 0,\n      \"N_optimistic_false_acceptance\": 0,\n      \"N_outside_represented_domain\": 0,\n      \"N_total\": 400,\n      \"N_valid\": 400,\n      \"agreement_rate\": 1.0,\n      \"all_400_cases_deterministic\": \"true\",\n      \"continuous_reference_unchanged\": \"true\",\n      \"grid_mm\": \"0.00025\",\n      \"legacy_mapping_equivalent_cases\": 400,\n      \"max_mapping_delta_um\": \"0.249917210872000\"\n    }\n  ],\n  \"task\": \"OFFGRID_UPWARD_MAPPING_400_CASE_VERIFICATION\"\n}\n"
+    },
+    "FULL_REPRODUCTION": {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/reproduce.py",
+        "--mode",
+        "full"
+      ],
+      "duration_seconds": 91.85665960004553,
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr_tail": "",
+      "stdout_tail": "FULL_REPRODUCTION=PASS\n"
+    },
+    "GIT_DIFF_CHECK": {
+      "command": [
+        "git",
+        "-C",
+        "G:\\rpra_experiments\\public_release\\rpra-recoverability-knowledge",
+        "diff",
+        "--check"
+      ],
+      "duration_seconds": 0.04043139994610101,
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr_tail": "warning: in the working copy of 'audits/20260826_offgrid_upward_mapping_400_case_verification/offgrid_upward_mapping_400_verification.csv', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'audits/20260826_offgrid_upward_mapping_400_case_verification/offgrid_upward_mapping_summary.csv', LF will be replaced by CRLF the next time Git touches it\n",
+      "stdout_tail": ""
+    },
+    "PYTEST": {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "duration_seconds": 8.149598500109278,
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr_tail": "",
+      "stdout_tail": "..........                                                               [100%]\n10 passed in 7.06s\n"
+    },
+    "QUICK_REPRODUCTION": {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/reproduce.py",
+        "--mode",
+        "quick"
+      ],
+      "duration_seconds": 7.711041999980807,
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr_tail": "",
+      "stdout_tail": "THREEPASSSTATES=407/621 recoverable\nTHREEPASSLOCALFEASIBLEIRRECOVERABLE=212\nTHREEPASSACTIONS=31549 preserving,41905 destroying\nFOURPASSRECOVERABLESTATES=947\nFOURPASSACTIONS=195289 preserving,92769 destroying\nCONFIGURATION_DEPENDENT_VALUES=214/621\nMECHANISM_4P442=0.432->4.010 destroying;0.557->3.885 preserving\nCOMPLETE_DOMAIN_STATE_SEMANTICS=UNCHANGED\nCOMPLETE_DOMAIN_ACTION_SEMANTICS=UNCHANGED\nQUICK_REPRODUCTION=PASS\n"
+    }
+  },
+  "remaining_blockers": [],
+  "repository_root": "G:\\rpra_experiments\\public_release\\rpra-recoverability-knowledge",
+  "required_return_block": "TASK_STATUS=COMPLETE\nBASELINE_COMMIT=c25540909939f65fad732420fa484f52931c02f9\nWORKING_COMMIT=UNCOMMITTED@c25540909939f65fad732420fa484f52931c02f9\nB2_CLASSIFICATION=B2_STRONG_SUPPORT\nCONTINUOUS_BOUNDARY_MM=4.588030453165504\nCHALLENGE_STATE_COUNT=161\nDETAIL_ROW_COUNT=805\nGRID_0P004_AGREEMENT=112/161\nGRID_0P004_FALSE_REJECTION=49\nGRID_0P004_FALSE_ACCEPTANCE=0\nGRID_0P002_AGREEMENT=144/161\nGRID_0P002_FALSE_REJECTION=17\nGRID_0P002_FALSE_ACCEPTANCE=0\nGRID_0P001_AGREEMENT=152/161\nGRID_0P001_FALSE_REJECTION=9\nGRID_0P001_FALSE_ACCEPTANCE=0\nGRID_0P0005_AGREEMENT=154/161\nGRID_0P0005_FALSE_REJECTION=7\nGRID_0P0005_FALSE_ACCEPTANCE=0\nGRID_0P00025_AGREEMENT=158/161\nGRID_0P00025_FALSE_REJECTION=3\nGRID_0P00025_FALSE_ACCEPTANCE=0\nMAX_MISCLASSIFICATION_DISTANCE_UM=12.000000000000\nNUMERICAL_UNRESOLVED_COUNT=0\nFROZEN_400_STATE_AUDIT_UNCHANGED=PASS\nPYTEST=PASS\nQUICK_REPRODUCTION=PASS\nFULL_REPRODUCTION=PASS\nGIT_DIFF_CHECK=PASS\nPUBLIC_V1_1_0_MODIFIED=false\nREMAINING_BLOCKERS=NONE",
+  "started_utc": "2026-08-29T04:10:49.979880+00:00",
+  "task": "RINENG_B2_NEAR_BOUNDARY_CHALLENGE_FORMAL_RUN",
+  "task_status": "COMPLETE",
+  "tracked_diff_after": "",
+  "tracked_diff_before": "",
+  "working_commit": "UNCOMMITTED@c25540909939f65fad732420fa484f52931c02f9"
+}

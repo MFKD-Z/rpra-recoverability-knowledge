@@ -1,0 +1,188 @@
+{
+  "ACTION_DIFFERENCE_UM_ALL_FIRST_DECISIONS": {
+    "count": 140,
+    "max": 0.0,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "ACTION_DIFFERENCE_UM_DIFFERING_FIRST_DECISIONS": {
+    "count": 0,
+    "max": null,
+    "mean": null,
+    "median": null,
+    "p95": null
+  },
+  "B1_CLASSIFICATION": "B1_NUMERICALLY_UNRESOLVED",
+  "BASELINE_COMMIT": "c25540909939f65fad732420fa484f52931c02f9",
+  "CACHE_DETERMINISM": {
+    "cache_entry_count": 525,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "repeat_call_count": 525,
+    "status": "PASS"
+  },
+  "EXACT_FIRST_ACTION_AGREEMENT_COUNT": 140,
+  "FIRST_DECISION_ROWS": 407,
+  "FORMAL_RUN_COMMIT": "43819fd4d21e440f9e7d8ea3bacffdad62732797",
+  "FULL_SEQUENCE_AGREEMENT_COUNT": 139,
+  "IMMEDIATE_DEFLECTION_DELTA_UM_ALL_FIRST_DECISIONS": {
+    "count": 140,
+    "max": 0.0,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "IMMEDIATE_DEFLECTION_DELTA_UM_DIFFERING_FIRST_DECISIONS": {
+    "count": 0,
+    "max": null,
+    "mean": null,
+    "median": null,
+    "p95": null
+  },
+  "MECHANISM_REGRESSION": {
+    "MECHANISM_4P442_UNCHANGED": true,
+    "destroying": {
+      "action_mm": 0.432,
+      "class": "DESTROYING",
+      "matches_frozen": true,
+      "successor_mm": 4.01
+    },
+    "preserving": {
+      "action_mm": 0.557,
+      "class": "PRESERVING",
+      "matches_frozen": true,
+      "successor_mm": 3.885
+    }
+  },
+  "NUMERICAL_UNRESOLVED_COUNT": 187,
+  "ONLINE_FIRST_DECISION_NO_PASS_COUNT": 0,
+  "ONLINE_FIRST_DECISION_UNRESOLVED_COUNT": 267,
+  "ONLINE_REOPT_COMPLETION_COUNT": 139,
+  "ONLINE_REOPT_COMPLETION_RATE": 0.3415233415233415,
+  "ONLINE_REOPT_FAILURE_BY_STAGE": {
+    "NUMERICAL_UNRESOLVED_M2": 1,
+    "NUMERICAL_UNRESOLVED_M3": 267
+  },
+  "ONLINE_REOPT_TOTAL_SOLVE_CALLS_FIRST_DECISION_DOMAIN": 10741,
+  "ONLINE_REOPT_TOTAL_SOLVE_CALLS_FULL_ROLLOUT": 21427,
+  "ONLINE_SELECTED_DISCRETE_REJECTED_COUNT": 0,
+  "ONLINE_SELECTED_DISCRETE_REJECTED_FIRST_DECISION_COUNT": 0,
+  "OUTCOME_COMPUTATION_ACTUAL_CALLS_BY_PURPOSE": {
+    "determinism_repeat": 525,
+    "first_decision_online": 407,
+    "rollout_online_m2": 115,
+    "rollout_rpra_audit_m2": 3
+  },
+  "OUTCOME_COMPUTATION_ACTUAL_SOLVER_CALLS_BEFORE_DETERMINISM": 525,
+  "OUTCOME_COMPUTATION_ACTUAL_SOLVER_CALLS_INCLUDING_DETERMINISM": 1050,
+  "OUTCOME_COMPUTATION_CACHE_HITS_BY_PURPOSE": {
+    "first_decision_online": 10334,
+    "first_decision_rpra_audit": 407,
+    "rollout_online_m2": 10571,
+    "rollout_online_m3": 10741,
+    "rollout_rpra_audit_m2": 404,
+    "rollout_rpra_audit_m3": 407
+  },
+  "RECOVERABLE_START_STATES": 407,
+  "REGRESSION_GATES": {
+    "full_reproduction": "PENDING",
+    "git_diff_check": "PENDING",
+    "pytest": "PENDING",
+    "quick_reproduction": "PENDING"
+  },
+  "ROW_COUNTS": {
+    "disagreement_audit": 268,
+    "first_action": 407,
+    "rollout_trajectory": 1907,
+    "timing_raw": 492
+  },
+  "RPRA_COMPLETION_COUNT": 407,
+  "RPRA_COMPLETION_RATE": 1.0,
+  "RPRA_FAILURE_BY_STAGE": {},
+  "RPRA_PRESERVATION_INVARIANT_VIOLATION_COUNT": 0,
+  "RPRA_SELECTED_CONTINUOUS_INFEASIBLE_COUNT": 0,
+  "RPRA_SELECTED_CONTINUOUS_INFEASIBLE_FIRST_DECISION_COUNT": 0,
+  "RPRA_SELECTED_CONTINUOUS_UNRESOLVED_COUNT": 26,
+  "RPRA_SELECTED_CONTINUOUS_UNRESOLVED_FIRST_DECISION_COUNT": 25,
+  "TIMING": {
+    "ONLINE_REOPT_pooled_measurement_ms": {
+      "count": 205,
+      "max": 8744.9135,
+      "mean": 2317.264768780488,
+      "median": 1644.1286,
+      "p95": 7013.368159999999
+    },
+    "ONLINE_REOPT_state_median_ms": {
+      "count": 41,
+      "max": 8626.6716,
+      "mean": 2314.8024536585367,
+      "median": 1644.1286,
+      "p95": 6892.9097
+    },
+    "RPRA_pooled_measurement_ms": {
+      "count": 205,
+      "max": 0.4629,
+      "mean": 0.1802180487804878,
+      "median": 0.1731,
+      "p95": 0.21653999999999995
+    },
+    "RPRA_state_median_ms": {
+      "count": 41,
+      "max": 0.2913,
+      "mean": 0.1759731707317073,
+      "median": 0.1714,
+      "p95": 0.1954
+    },
+    "measured_repetitions_per_policy_state": 5,
+    "measured_row_count": 410,
+    "raw_row_count": 492,
+    "subset_indices_0based": [
+      0,
+      10,
+      20,
+      30,
+      41,
+      51,
+      61,
+      71,
+      81,
+      91,
+      102,
+      112,
+      122,
+      132,
+      142,
+      152,
+      162,
+      173,
+      183,
+      193,
+      203,
+      213,
+      223,
+      233,
+      244,
+      254,
+      264,
+      274,
+      284,
+      294,
+      304,
+      315,
+      325,
+      335,
+      345,
+      355,
+      365,
+      376,
+      386,
+      396,
+      406
+    ],
+    "subset_size": 41,
+    "warmup_runs_per_policy_state": 1
+  },
+  "TIMING_NUMERICAL_UNRESOLVED_ROW_COUNT": 156,
+  "UNIQUE_NUMERICAL_UNRESOLVED_SOLVER_KEYS_BEFORE_DETERMINISM": 31
+}

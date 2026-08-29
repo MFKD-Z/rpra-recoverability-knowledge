@@ -1,0 +1,25 @@
+{
+  "config_path": "configs\\3pass_100um.yaml",
+  "config_sha256": "93b32d259e260324c3d0dfc295abcd7fd98d884c3473733c98e9d7a93096abb2",
+  "corrective_change_class": "EVIDENCE_GRANULARITY_AND_RETURN_FORMAT_ONLY",
+  "corrective_rerun": true,
+  "cpu_count": 12,
+  "expected_state_action_row_count": 1343844,
+  "harness_path": "scripts\\run_b3_terminal_tolerance_sensitivity.py",
+  "harness_sha256": "021edf5de16ad6111b6df9b8a90f9fdb09b9005ac7299ee1c75ad88a26b84f13",
+  "head_commit": "c25540909939f65fad732420fa484f52931c02f9",
+  "numpy": "2.4.6",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "protected_public_diff_from_v1_1_0": "",
+  "public_tag_commit": "c25540909939f65fad732420fa484f52931c02f9",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "scientific_baseline": "c25540909939f65fad732420fa484f52931c02f9",
+  "scipy": "1.17.1",
+  "state_action_evidence_semantics": "one row per case, evaluation state, and candidate action",
+  "terminal_cases_um": {
+    "T0": 0,
+    "T10": 10,
+    "T20": 20,
+    "T5": 5
+  }
+}

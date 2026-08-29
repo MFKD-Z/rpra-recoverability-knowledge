@@ -1,0 +1,5 @@
+terminal_case,epsilon_um,local_states,recoverable_states,local_but_irrecoverable,mixed_action_states,all_preserving_states,myopic_completion,rpra_completion
+T0,0,621,407,214,289,118,3/407,407/407
+T5,5,621,419,202,293,126,9/419,419/419
+T10,10,621,431,190,431,0,16/431,431/431
+T20,20,621,457,164,457,0,29/457,457/457

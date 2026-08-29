@@ -1,0 +1,40 @@
+{
+  "audit_status": "PASS",
+  "baseline_commit": "c25540909939f65fad732420fa484f52931c02f9",
+  "classification": "B3_STRONG_SUPPORT",
+  "corrective_rerun": true,
+  "files": {
+    "B3_CORRECTIVE_RERUN_NOTE.md": {
+      "sha256": "25d7efc48eb1e843359fcfb0733269c303a4e5389be19833546a02795ac0b4cf"
+    },
+    "B3_FORMAL_AUDIT.md": {
+      "sha256": "4346cb6709fe3f4d45bf91ce442d52bd1aa2bf5c92738f017b022f04e84a3fba"
+    },
+    "B3_environment.json": {
+      "sha256": "aa56e86e9e00d11f9c0d26957095a9e628165adc199b9133bf7c0cb39cb875ea"
+    },
+    "B3_rollout_trajectories.csv": {
+      "data_rows": 10284,
+      "sha256": "e4802161ed255cf4dcbff0c95ae31ac87825b89d07da9769f0ad8a9e56daa57f"
+    },
+    "B3_state_action_audit.csv": {
+      "data_rows": 1343844,
+      "sha256": "3ad3784212ef682afe50244e977109fdd97fd2273277966a57af62ac589833eb"
+    },
+    "B3_terminal_tolerance_summary.csv": {
+      "data_rows": 4,
+      "sha256": "69aff03d87a26d6f0a935d4e99dcee0e37fe2a13f525cacc8fb7b51929ecf7a4"
+    },
+    "scripts/run_b3_terminal_tolerance_sensitivity.py": {
+      "sha256": "021edf5de16ad6111b6df9b8a90f9fdb09b9005ac7299ee1c75ad88a26b84f13"
+    }
+  },
+  "invariant_error_count": 0,
+  "public_v1_1_0_modified": false,
+  "regression_gates": {
+    "full_reproduction": "PASS",
+    "git_diff_check": "PASS",
+    "pytest": "PASS",
+    "quick_reproduction": "PASS"
+  }
+}

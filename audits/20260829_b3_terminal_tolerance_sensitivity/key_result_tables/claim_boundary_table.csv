@@ -1,0 +1,7 @@
+claim,status,evidence_or_limit
+Separation persists through ±20 µm,SUPPORTED,local-but-irrecoverable count remains positive in T5 T10 T20
+Mixed action structure persists through ±20 µm,SUPPORTED,mixed-action state count remains positive in T5 T10 T20
+RPRA completes recoverable starts,SUPPORTED,all four exhaustive fixed-domain panels complete 100 percent
+All-preserving subset persists,NOT_SUPPORTED,all-preserving count is zero in T10 and T20
+Uncertainty or measurement-error robustness,NOT_TESTED,terminal-band sensitivity is not uncertainty propagation
+Cross-configuration generality,NOT_TESTED,only frozen scalar 3pass_100um case was evaluated

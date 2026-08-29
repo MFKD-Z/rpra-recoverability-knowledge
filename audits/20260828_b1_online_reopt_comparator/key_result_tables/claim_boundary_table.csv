@@ -1,0 +1,7 @@
+claim,status,evidence_boundary
+RPRA reproduces ONLINE-REOPT decisions on the frozen primary domain,SUPPORTED,407/407 first actions and 407/407 full sequences under matched current-action semantics
+RPRA avoids repeated online continuous solves during ordinary decisions,SUPPORTED_BOUNDED,42312 structural first-decision solves required by comparator versus zero online solves for RPRA lookup/filter
+RPRA is universally equivalent to continuous optimization,NOT_SUPPORTED,only one deterministic scalar 3-pass configuration was tested
+RPRA is superior to MPC or all online optimization,NOT_SUPPORTED,B1 is a matched downstream-feasibility comparator not an optimizer-superiority benchmark
+B1 proves real-time performance,NOT_SUPPORTED,timing is descriptive for one recorded environment and fixed subset
+SLSQP is globally optimal,NOT_SUPPORTED,the frozen design explicitly disallows this claim

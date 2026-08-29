@@ -1,0 +1,230 @@
+{
+  "ACTION_DIFFERENCE_UM_ALL_FIRST_DECISIONS": {
+    "count": 407,
+    "iqr": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0,
+    "q1": 0.0,
+    "q3": 0.0
+  },
+  "ACTION_DIFFERENCE_UM_DIFFERING_FIRST_DECISIONS": {
+    "count": 0,
+    "iqr": null,
+    "max": null,
+    "mean": null,
+    "median": null,
+    "p95": null,
+    "q1": null,
+    "q3": null
+  },
+  "B1_CLASSIFICATION": "B1_STRONG_SUPPORT",
+  "BASELINE_COMMIT": "c25540909939f65fad732420fa484f52931c02f9",
+  "CACHE_DETERMINISM": {
+    "cache_entry_count": 525,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "repeat_call_count": 525,
+    "status": "PASS"
+  },
+  "EXACT_FIRST_ACTION_AGREEMENT_COUNT": 407,
+  "FIRST_DECISION_ROWS": 407,
+  "FORMAL_RUN_COMMIT": "dc38b09d97b7f24f01010931af042d1993959ceb",
+  "FULL_SEQUENCE_AGREEMENT_COUNT": 407,
+  "IMMEDIATE_DEFLECTION_DELTA_UM_ALL_FIRST_DECISIONS": {
+    "count": 407,
+    "iqr": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0,
+    "q1": 0.0,
+    "q3": 0.0
+  },
+  "IMMEDIATE_DEFLECTION_DELTA_UM_DIFFERING_FIRST_DECISIONS": {
+    "count": 0,
+    "iqr": null,
+    "max": null,
+    "mean": null,
+    "median": null,
+    "p95": null,
+    "q1": null,
+    "q3": null
+  },
+  "MECHANISM_REGRESSION": {
+    "MECHANISM_4P442_UNCHANGED": true,
+    "destroying": {
+      "action_mm": 0.432,
+      "class": "DESTROYING",
+      "matches_frozen": true,
+      "successor_mm": 4.01
+    },
+    "preserving": {
+      "action_mm": 0.557,
+      "class": "PRESERVING",
+      "matches_frozen": true,
+      "successor_mm": 3.885
+    }
+  },
+  "NUMERICAL_UNRESOLVED_COUNT": 0,
+  "ONLINE_FIRST_DECISION_NO_PASS_COUNT": 0,
+  "ONLINE_FIRST_DECISION_UNRESOLVED_COUNT": 0,
+  "ONLINE_REOPT_COMPLETION_COUNT": 407,
+  "ONLINE_REOPT_COMPLETION_RATE": 1.0,
+  "ONLINE_REOPT_FAILURE_BY_STAGE": {},
+  "ONLINE_REOPT_TOTAL_SOLVE_CALLS_FIRST_DECISION_DOMAIN": 42312,
+  "ONLINE_REOPT_TOTAL_SOLVE_CALLS_FULL_ROLLOUT": 82624,
+  "ONLINE_SELECTED_DISCRETE_REJECTED_COUNT": 0,
+  "ONLINE_SELECTED_DISCRETE_REJECTED_FIRST_DECISION_COUNT": 0,
+  "ONLINE_SELECTED_INSIDE_DISCRETE_PRESERVING_ENVELOPE_COUNT": 1221,
+  "ONLINE_SELECTED_INSIDE_DISCRETE_PRESERVING_ENVELOPE_FIRST_DECISION_COUNT": 407,
+  "OUTCOME_COMPUTATION_ACTUAL_CALLS_BY_PURPOSE": {
+    "determinism_repeat": 525,
+    "first_decision_online": 407,
+    "rollout_online_m2": 115,
+    "rollout_rpra_audit_m2": 3
+  },
+  "OUTCOME_COMPUTATION_ACTUAL_SOLVER_CALLS_BEFORE_DETERMINISM": 525,
+  "OUTCOME_COMPUTATION_ACTUAL_SOLVER_CALLS_INCLUDING_DETERMINISM": 1050,
+  "OUTCOME_COMPUTATION_CACHE_HITS_BY_PURPOSE": {
+    "first_decision_online": 41905,
+    "first_decision_rpra_audit": 407,
+    "rollout_online_m2": 40197,
+    "rollout_online_m3": 42312,
+    "rollout_rpra_audit_m2": 404,
+    "rollout_rpra_audit_m3": 407
+  },
+  "RECOVERABLE_START_STATES": 407,
+  "REGRESSION_GATES": {
+    "full_reproduction": "PASS",
+    "git_diff_check": "PASS",
+    "pytest": "PASS",
+    "quick_reproduction": "PASS"
+  },
+  "ROW_COUNTS": {
+    "continuous_solver_audit": 525,
+    "disagreement_audit": 407,
+    "first_action": 407,
+    "rollout_trajectory": 2442,
+    "timing_raw": 492
+  },
+  "RPRA_COMPLETION_COUNT": 407,
+  "RPRA_COMPLETION_RATE": 1.0,
+  "RPRA_FAILURE_BY_STAGE": {},
+  "RPRA_PRESERVATION_INVARIANT_VIOLATION_COUNT": 0,
+  "RPRA_SELECTED_CONTINUOUS_FEASIBLE_FIRST_DECISION_COUNT": 407,
+  "RPRA_SELECTED_CONTINUOUS_INFEASIBLE_COUNT": 0,
+  "RPRA_SELECTED_CONTINUOUS_INFEASIBLE_FIRST_DECISION_COUNT": 0,
+  "RPRA_SELECTED_CONTINUOUS_UNRESOLVED_COUNT": 0,
+  "RPRA_SELECTED_CONTINUOUS_UNRESOLVED_FIRST_DECISION_COUNT": 0,
+  "TIMING": {
+    "ONLINE_REOPT_pooled_measurement_ms": {
+      "count": 205,
+      "iqr": 15598.2814,
+      "max": 24921.4691,
+      "mean": 8742.248743414635,
+      "median": 7080.9788,
+      "p95": 23069.61692,
+      "q1": 102.6657,
+      "q3": 15700.9471
+    },
+    "ONLINE_REOPT_state_median_ms": {
+      "count": 41,
+      "iqr": 15562.319500000001,
+      "max": 24863.8641,
+      "mean": 8741.82895609756,
+      "median": 7080.9788,
+      "p95": 22931.1372,
+      "q1": 102.7118,
+      "q3": 15665.0313
+    },
+    "RPRA_pooled_measurement_ms": {
+      "count": 205,
+      "iqr": 0.015600000000000003,
+      "max": 0.3745,
+      "mean": 0.1778312195121951,
+      "median": 0.1717,
+      "p95": 0.21758,
+      "q1": 0.1654,
+      "q3": 0.181
+    },
+    "RPRA_state_median_ms": {
+      "count": 41,
+      "iqr": 0.017000000000000015,
+      "max": 0.1996,
+      "mean": 0.17284146341463413,
+      "median": 0.1711,
+      "p95": 0.1918,
+      "q1": 0.1626,
+      "q3": 0.1796
+    },
+    "measured_repetitions_per_policy_state": 5,
+    "measured_row_count": 410,
+    "raw_row_count": 492,
+    "subset_indices_0based": [
+      0,
+      10,
+      20,
+      30,
+      41,
+      51,
+      61,
+      71,
+      81,
+      91,
+      102,
+      112,
+      122,
+      132,
+      142,
+      152,
+      162,
+      173,
+      183,
+      193,
+      203,
+      213,
+      223,
+      233,
+      244,
+      254,
+      264,
+      274,
+      284,
+      294,
+      304,
+      315,
+      325,
+      335,
+      345,
+      355,
+      365,
+      376,
+      386,
+      396,
+      406
+    ],
+    "subset_size": 41,
+    "warmup_runs_per_policy_state": 1
+  },
+  "TIMING_NUMERICAL_UNRESOLVED_ROW_COUNT": 0,
+  "TRAJECTORY_ACTION_AGREEMENT_BY_STAGE": {
+    "stage_1": {
+      "exact_action_agreement_count": 407,
+      "exact_action_agreement_rate": 1.0,
+      "paired_row_count": 407
+    },
+    "stage_2": {
+      "exact_action_agreement_count": 407,
+      "exact_action_agreement_rate": 1.0,
+      "paired_row_count": 407
+    },
+    "stage_3": {
+      "exact_action_agreement_count": 407,
+      "exact_action_agreement_rate": 1.0,
+      "paired_row_count": 407
+    }
+  },
+  "UNIQUE_NUMERICAL_UNRESOLVED_SOLVER_KEYS_BEFORE_DETERMINISM": 0
+}
