@@ -213,6 +213,15 @@ python scripts/reproduce_tables.py
 python scripts/reproduce_figures.py
 ```
 
+### Manuscript data figures
+
+The current manuscript data figures can be regenerated directly from the
+versioned repository inputs and RPRA implementation with:
+
+```bash
+python scripts/build_rineng_data_figures.py
+```
+
 ## Tier-B evidence
 
 The final Tier-B evidence is retained under:
